@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kilole Luxury Hotel</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:'Poppins', sans-serif;
+  background:#0f0f0f;
+  color:white;
+  scroll-behavior:smooth;
+}
+
+header{
+  position:fixed;
+  width:100%;
+  padding:20px 50px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  background:rgba(0,0,0,0.6);
+  backdrop-filter:blur(10px);
+  z-index:1000;
+}
+
+header h1{
+  font-family:'Playfair Display', serif;
+  color:#d4af37;
+}
+
+nav a{
+  color:white;
+  text-decoration:none;
+  margin-left:25px;
+  transition:0.3s;
+}
+
+nav a:hover{
+  color:#d4af37;
+}
+
+.hero{
+  height:100vh;
+  background:url('images/pexels-nida-kurt-5079840-17836121.JPG') center/cover no-repeat;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  position:relative;
+}
+
+.hero::after{
+  content:"";
+  position:absolute;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.6);
+}
+
+.hero-content{
+  position:relative;
+  z-index:1;
+}
+
+.hero h2{
+  font-family:'Playfair Display', serif;
+  font-size:60px;
+  margin-bottom:20px;
+}
+
+.hero button{
+  padding:12px 30px;
+  border:none;
+  border-radius:30px;
+  background:#d4af37;
+  color:black;
+  font-weight:bold;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.hero button:hover{
+  transform:scale(1.05);
+  background:white;
+}
+
+section{
+  padding:100px 10%;
+}
+
+.section-title{
+  text-align:center;
+  font-family:'Playfair Display', serif;
+  font-size:40px;
+  margin-bottom:60px;
+  color:#d4af37;
+}
+
+.rooms{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:30px;
+}
+
+.room-card{
+  background:#1a1a1a;
+  border-radius:15px;
+  overflow:hidden;
+  transition:0.4s;
+}
+
+.room-card:hover{
+  transform:translateY(-10px);
+}
+
+.room-card img{
+  width:100%;
+  height:250px;
+  object-fit:cover;
+}
+
+.room-card-content{
+  padding:20px;
+}
+
+.room-card h3{
+  font-family:'Playfair Display', serif;
+  margin-bottom:10px;
+  color:#d4af37;
+}
+
+footer{
+  background:black;
+  text-align:center;
+  padding:30px;
+  color:#aaa;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>Kilole Hotel</h1>
+  <nav>
+    <a href="#rooms">Rooms</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <div class="hero-content" data-aos="fade-up">
+    <h2>Experience True Luxury</h2>
+    <button>Book Now</button>
+  </div>
+</div>
+
+<section id="rooms">
+  <h2 class="section-title" data-aos="fade-up">Our Rooms</h2>
+  <div class="rooms">
+    
+    <div class="room-card" data-aos="fade-up">
+      <img src="images/pexels-nida-kurt-5079840-17836121.JPG">
+      <div class="room-card-content">
+        <h3>Deluxe Room</h3>
+        <p>Elegant comfort with modern amenities.</p>
+      </div>
+    </div>
+
+    <div class="room-card" data-aos="fade-up" data-aos-delay="100">
+      <img src="images/pexels-nida-kurt-5079840-17836121.JPG">
+      <div class="room-card-content">
+        <h3>Executive Suite</h3>
+        <p>Premium experience with luxury space.</p>
+      </div>
+    </div>
+
+    <div class="room-card" data-aos="fade-up" data-aos-delay="200">
+      <img src="images/pexels-nida-kurt-5079840-17836121.JPG">
+      <div class="room-card-content">
+        <h3>Presidential Suite</h3>
+        <p>The ultimate 5-star living experience.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="about">
+  <h2 class="section-title" data-aos="fade-up">About Us</h2>
+  <p data-aos="fade-up" style="text-align:center; max-width:700px; margin:auto;">
+    Kilole Luxury Hotel offers world-class hospitality, elegant interiors, and unmatched comfort in the heart of the city.
+  </p>
+</section>
+
+<section id="contact">
+  <h2 class="section-title" data-aos="fade-up">Contact Us</h2>
+  <p data-aos="fade-up" style="text-align:center;">
+    Email: contact@kilolehotel.com | Phone: +251 912 345 678
+  </p>
+</section>
+
+<footer>
+  © 2026 Kilole Luxury Hotel. All rights reserved.
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+AOS.init({
+  duration:1200,
+  once:true
+});
+</script>
+
+</body>
+</html>
